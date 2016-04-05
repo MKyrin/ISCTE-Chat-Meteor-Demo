@@ -1,13 +1,10 @@
 <template name="footer">
-  <div class="footer">
-        <div class="user-menu">
-            <span class="user-menu_profile-pic"></span>
-            <span class="user-menu_username">{{usernameFromCurrentUser}}</span>
-            <img class="connection_icon" src="data:image/png;base64,iVBORw0KGgoAAAAN...">
-            <span class="connection_status">online</span>
-        </div>
-        <form class="input-box">
-            <input type="text" name="message" class="input-box_text">
-        </form>
-    </div>
+  <footer class="footer">
+          <div class="container-fluid" style="padding-top:12px" id="messagebox">
+            <form class="input-group">
+              <input type="text" class="form-control" name="message" placeholder="Message" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">Send</span>
+            </form>
+          </div>
+        </footer>
 </template>

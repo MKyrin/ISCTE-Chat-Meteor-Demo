@@ -1,6 +1,7 @@
 
 Template.messages.helpers({
-  messages: Messages.find({})
+  messages: Messages.find({}),
+  channel : function(){ return Session.get("channel")},
 });
 
 Template.messages.events({

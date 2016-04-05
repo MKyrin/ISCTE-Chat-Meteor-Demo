@@ -20,6 +20,7 @@ Template.listings.events({
 
 Template.channel.events({
     'click .channel': function (e) {
+        e.preventDefault();
         Session.set('channel', this.name);
     }
 });

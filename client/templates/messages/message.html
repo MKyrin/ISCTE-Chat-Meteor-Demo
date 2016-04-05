@@ -1,9 +1,13 @@
 <template name="message">
-  <div class="message">
-    <a href="" class="message_profile-pic"></a>
-    <a href="" class="message_username">{{usernameFromId user}}</a>
-    <span class="message_timestamp">{{timestampToTime timestamp}}</span>
-    <span class="message_star"></span>
-    <span class="message_content">{{text}}</span>
-  </div>
+  <div class="row msg_container base_sent">
+          <div class="col-md-10 col-xs-10">
+            <div class="messages msg_sent">
+              <p>{{text}}</p>
+              <time datetime="2009-11-13T20:00">{{usernameFromId user}} • {{timestampToTime timestamp}}</time>
+            </div>
+          </div>
+          <div class="col-md-2 col-xs-2 avatar">
+            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+          </div>
+        </div>
 </template>
