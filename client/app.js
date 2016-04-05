@@ -5,7 +5,7 @@ Meteor.subscribe("allUsernames");
 Meteor.subscribe('channels');
 
 Meteor.startup(function() {
-    Session.set('channel', 'general');
+    Session.set('channel', 'mei');
     Accounts.ui.config({
         passwordSignupFields: 'USERNAME_ONLY'
     });
