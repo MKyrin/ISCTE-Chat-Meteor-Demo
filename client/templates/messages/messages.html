@@ -1,7 +1,7 @@
 <template name="messages">
   <div class="row">
     <div class="col-lg-12">
-      <h1>#{{channel}}</h1>
+      <h1 style="position:fixed">#{{channel}}</h1>
       <div class="panel-body msg_container_base" id="scroll">
         {{#if Template.subscriptionsReady}}
           {{#each messages}}

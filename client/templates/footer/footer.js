@@ -18,6 +18,6 @@ Template.footer.events({
       Meteor.call('newMessage', { "text": message, "channel" :  Session.get('channel') });
       event.target.message.value = "";
     }
-    document.getElementById("scroll").scrollTop = document.getElementById("scroll").scrollHeight;
+    
   }
 });

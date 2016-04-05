@@ -2,8 +2,11 @@
   <footer class="footer">
           <div class="container-fluid" style="padding-top:12px" id="messagebox">
             <form class="input-group">
+              <span class="input-group-addon" id="basic-addon1">{{usernameFromCurrentUser}}</span>
               <input type="text" class="form-control" name="message" placeholder="Message" aria-describedby="basic-addon2">
-              <span class="input-group-addon" id="basic-addon2">Send</span>
+              <span class="input-group-btn">
+                 <button class="btn btn-default" type="submit">Send</button>
+               </span>
             </form>
           </div>
         </footer>
